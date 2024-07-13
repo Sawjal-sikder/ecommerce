@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Add Product{% endblock  %}
+{% block body %}
+<br>
+<br>
+<br>
+<main class=" mx-sm-5 mb-2">
+
+<h1>Add to Product</h1>
+<form action="" method="post">
+    {% csrf_token %}  <!-- Fixed the typo -->
+<div class="form-group" >
+    {{ form.as_p }}
+</div>
+    <button type="submit">Save</button>
+</form>
+<br><br>
+<br>
+<br>
+<br>
+</main>
+{% endblock %}
